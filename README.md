@@ -1,4 +1,4 @@
-# Проект по автоматизации тестирования для  API:star2:
+# Проект по автоматизации тестирования для  API с помощью </br> сайта :star2:</br>
 
 
 ## :clipboard:: Содержание:
@@ -11,7 +11,7 @@
 - <a href="#bar_chart-интеграция-с-allure-testops">Интеграция с Allure TestOps</a>
 - <a href="#chart_with_upwards_trend-интеграция-с-jira">Интеграция с Jira</a>
 - <a href="#iphone-отчет-в-telegram">Отчет в Telegram</a>
-- <a href="#movie_camera-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
+
 
 ## :trophy:Технологии и инструменты
                                                                                                         
@@ -21,15 +21,13 @@
 
 Для API тестирования использовался сайт <https://reqres.in/.
 
-Специально для API тестирования были использованы специальные библтотеки "Lombock, Pojo, Groove
+Специально для API тестирования были использованы специальные библитотеки "Lombock, Pojo, Groove"
 
  В качестве библиотеки для модульного тестирования используется <code>JUnit 5</code>.
  
  Для автоматизированной сборки проекта используется <code>Gradle</code>.
  
- <code>Selenoid</code> выполняет запуск браузеров в контейнерах <code>Docker</code>.
-
- <code>Allure Report</code> формирует отчет о запуске тестов.
+  <code>Allure Report</code> формирует отчет о запуске тестов.
 
  <code>Jenkins</code> выполняет запуск тестов.
  
@@ -49,11 +47,6 @@
 
 ###  :clipboard: Параметры сборки в Jenkins:
 Сборка в Jenkins
-
-- browser (браузер, по умолчанию chrome)
-- version (версия браузера, по умолчанию 99.0)
-- size (размер окна браузера, по умолчанию 1920x1080)
-- threads (количество потоков)
 - необходимо добавить файл credentials.properties (содержащий в себе логины и пароли, пример в папке resources)
 
 ## :computer: Запуск из терминала
@@ -98,10 +91,10 @@ test
 
 ## 	:iphone: Отчет в Telegram
 
- ![This is an image](design/pictures/Telegram.jpeg)
+ ![This is an image](design/pictures/Telegram (1).jpeg)
 
 
-## :movie_camera: Видео примеры прохождения тестов
+
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
