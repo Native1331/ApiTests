@@ -1,5 +1,5 @@
-# Проект по автоматизации тестирования для  Head Hunter, сайта поиска работодателя и работника	 с использованием API:star2:
-## <a target="_blank" href="https://spb.hh.ru/">Веб сайт Head Hunter</a>
+# Проект по автоматизации тестирования для  API:star2:
+
 
 ![This is an image](design/pictures/hh.jpeg)	
 
@@ -19,7 +19,11 @@
                                                                                                         
 ![This is an image](/design/icons/Java.png)![This is an image](/design/icons/Gradle.png)![This is an image](/design/icons/Intelij_IDEA.png)![This is an image](/design/icons/Selenide.png)![This is an image](/design/icons/Selenoid.png)![This is an image](/design/icons/JUnit5.png)![This is an image](/design/icons/Jenkins.png)![This is an image](/design/icons/Allure_Report.png)![This is an image](/design/icons/AllureTestOps.png)![This is an image](/design/icons/Telegram.png)![This is an image](/design/icons/Jira.png)</br>
 
-В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для API.
+В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code>.
+
+Для API тестирования использовался сайт <https://reqres.in/.
+
+Специально для API тестирования были использованы специальные библтотеки "Lombock, Pojo, Groove
 
  В качестве библиотеки для модульного тестирования используется <code>JUnit 5</code>.
  
