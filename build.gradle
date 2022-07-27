@@ -65,3 +65,9 @@ test {
         }
     }
 }
+task "Api"(type:Test) {
+ useJUnitPlatform{
+ includeTags "Api"
+            }
+
+}
