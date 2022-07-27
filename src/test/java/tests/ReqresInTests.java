@@ -1,6 +1,6 @@
 package tests;
 
-import models.lombock.BodyData;
+import models.lombok.BodyData;
 import models.pojo.UserData;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
