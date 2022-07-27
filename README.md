@@ -11,7 +11,7 @@
 - <a href="#bar_chart-интеграция-с-allure-testops">Интеграция с Allure TestOps</a>
 - <a href="#chart_with_upwards_trend-интеграция-с-jira">Интеграция с Jira</a>
 - <a href="#iphone-отчет-в-telegram">Отчет в Telegram</a>
-- <a href="#movie_camera-видео-примеры-прохождения-тестов">Видео примеры прохождения тестов</a>
+
 
 ## :trophy:Технологии и инструменты
                                                                                                         
@@ -27,9 +27,7 @@
  
  Для автоматизированной сборки проекта используется <code>Gradle</code>.
  
- <code>Selenoid</code> выполняет запуск браузеров в контейнерах <code>Docker</code>.
-
- <code>Allure Report</code> формирует отчет о запуске тестов.
+  <code>Allure Report</code> формирует отчет о запуске тестов.
 
  <code>Jenkins</code> выполняет запуск тестов.
  
@@ -96,7 +94,7 @@ test
  ![This is an image](design/pictures/Telegram.jpeg)
 
 
-## :movie_camera: Видео примеры прохождения тестов
+
 
 :heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
 :blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
