@@ -1,8 +1,6 @@
 # Проект по автоматизации тестирования для  API:star2:
 
 
-![This is an image](design/pictures/hh.jpeg)	
-
 ## :clipboard:: Содержание:
 
 - <a href="#trophy-технологии-и-инструменты">Технологии и инструменты</a> 
