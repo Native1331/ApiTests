@@ -91,7 +91,7 @@ test
 
 ## 	:iphone: Отчет в Telegram
 
- ![This is an image](design/pictures/Telegram(1).jpeg)
+ ![This is an image](design/pictures/Telegram (1).jpeg)
 
 
 
