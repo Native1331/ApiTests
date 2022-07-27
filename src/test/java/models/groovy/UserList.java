@@ -1,8 +1,8 @@
-package tests;
+package models.groovy;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
-import static tests.Specs.request;
+import static specs.Specs.request;
 
 public class UserList {
     public void checkListOfUsersByGroovy() {
@@ -15,7 +15,6 @@ public class UserList {
                 .log().body()
                 .body("data.findAll{it.user =~/.*?@reqres.in/}.user.flatten()",
                         hasItem("id"));
-
 
 
     }

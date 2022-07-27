@@ -1,4 +1,4 @@
-package tests;
+package specs;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;

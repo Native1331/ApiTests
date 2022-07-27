@@ -1,24 +1,24 @@
 package tests;
 
-import tests.lombock.BodyData;
-import tests.lombock.UserData;
+import models.lombock.BodyData;
+import models.pojo.UserData;
 import org.junit.jupiter.api.Test;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static tests.Specs.*;
+import static specs.Specs.*;
 
-public class ReqresInTests{
+public class ReqresInTests extends TestBase {
     @Test
-    void listUsersTest () {
-         given()
+    void listUsersTest() {
+        given()
                 .spec(request)
                 .when()
                 .get("/users?page=2")
                 .then()
                 .spec(responseSucces)
-                 .body("total", is(12));
-
+                .log().body();
     }
 
     @Test
@@ -31,7 +31,7 @@ public class ReqresInTests{
                 .then()
                 .spec(responseSucces)
                 .body("data.first_name", is("Janet"));
-      }
+    }
 
     @Test
     void createUserTest() {
@@ -45,7 +45,7 @@ public class ReqresInTests{
                 .then()
                 .spec(responseCreate)
                 .body("name", is("morpheus"));
-           }
+    }
 
     @Test
     void loginUnsuccesfullTest() {
@@ -85,7 +85,7 @@ public class ReqresInTests{
 
     @Test
     void singleUserWithLombok() {
-       UserData data =  given()
+        UserData data = given()
                 .spec(request)
                 .when()
                 .get("/users/2")
@@ -93,12 +93,12 @@ public class ReqresInTests{
                 .spec(responseSucces)
                 .log().body()
                 .extract().as(UserData.class);
-                assertEquals(2, data.getUser().getId());
+        assertEquals(2, data.getUser().getId());
     }
 
     @Test
     void UsersWithLombok() {
-        BodyData data =  given()
+        BodyData data = given()
                 .spec(request)
                 .when()
                 .get("/users/2")
@@ -106,6 +106,19 @@ public class ReqresInTests{
                 .spec(responseSucces)
                 .log().body()
                 .extract().as(BodyData.class);
-              assertEquals(null, data.getBody().getUserData());
-            }
+        assertEquals(null, data.getBody().getUserData());
+    }
+
+
+    @Test
+    void ListUserTest() {
+        given()
+                .spec(request)
+                .body("User")
+                .when()
+                .get("/users?page=2")
+                .then()
+                .spec(responseSucces)
+                .log().body();
+    }
 }

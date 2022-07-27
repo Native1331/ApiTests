@@ -1,14 +1,12 @@
-package tests.lombock;
-
+package models.pojo;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
-
-    @Data
+@Data
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public class BodyData {
+    public class UserData {
         @JsonProperty("data")
-        private tests.lombock.Body Body;
+        private User user;
     }
 
