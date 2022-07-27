@@ -19,7 +19,7 @@
 
 В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code>.
 
-Для API тестирования использовался сайт <https://reqres.in/.
+Для API тестирования использовался сайт https://reqres.in/.
 
 Специально для API тестирования были использованы специальные библитотеки "Lombock, Pojo, Groove"
 
@@ -91,7 +91,7 @@ test
 
 ## 	:iphone: Отчет в Telegram
 
- ![This is an image](design/pictures/Telegram (1).jpeg)
+ ![This is an image](design/pictures/Telegram.jpeg)
 
 
 
