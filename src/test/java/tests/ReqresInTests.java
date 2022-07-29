@@ -4,7 +4,6 @@ import models.lombok.BodyData;
 import models.pojo.UserData;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -111,16 +110,15 @@ public class ReqresInTests extends TestBase {
         assertEquals(null, data.getBody().getUserData());
     }
 
-
     @Test
     void ListUserTest() {
         given()
-                .spec(request)
-                .body("User")
-                .when()
-                .get("/users?page=2")
-                .then()
-                .spec(responseSucces)
-                .log().body();
+             .spec(request)
+             .body("User")
+             .when()
+             .get("/users?page=2")
+             .then()
+             .spec(responseSucces)
+             .log().body();
     }
 }
