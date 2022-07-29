@@ -19,6 +19,3 @@ public class Body {
     private String url;
     private String text;
 }
-
-
-
