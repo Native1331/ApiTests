@@ -1,10 +1,12 @@
 package tests;
 
+import io.qameta.allure.restassured.AllureRestAssured;
 import models.lombok.BodyData;
 import models.pojo.UserData;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static helpers.CustomApiListener.withCustomTemplates;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -40,6 +42,7 @@ public class ReqresInTests extends TestBase {
         String body = "{ \"name\": \"morpheus\", " +
                 "\"job\": \"leader\" }";
         given()
+                .filter(withCustomTemplates())
                 .spec(request)
                 .body(body)
                 .when()
